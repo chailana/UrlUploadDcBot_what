@@ -137,7 +137,7 @@ async def echo(bot, update):
         chat_id=update.chat.id,
         text=f'Processing your link ⌛',
         disable_web_page_preview=True,
-        reply_to_message_id=update.message_id
+        reply_to_message_id=update.id
 
     )
     if update.from_user.id not in Config.AUTH_USERS:
