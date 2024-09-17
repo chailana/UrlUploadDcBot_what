@@ -113,6 +113,7 @@ async def echo(bot, update):
             "yt-dlp",
             "--no-warnings",
             "--allow-dynamic-mpd",
+            "--cookies", "cookies.txt",
             "-j",
             url,
             "--proxy", Config.HTTP_PROXY
@@ -122,6 +123,7 @@ async def echo(bot, update):
             "yt-dlp",
             "--no-warnings",
             "--allow-dynamic-mpd",
+            "--cookies", "cookies.txt",
             "-j",
             url
         ]
