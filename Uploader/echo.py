@@ -180,7 +180,7 @@ async def echo(bot, update):
         await bot.send_message(
             chat_id=update.chat.id,
             text=Translation.NO_VOID_FORMAT_FOUND.format(str(error_message)),
-            reply_to_message_id=update.message_id,
+            reply_to_message_id=update.id,
 
             disable_web_page_preview=True
         )
@@ -305,7 +305,7 @@ async def echo(bot, update):
                 Thumbnail) + "\n" + Translation.SET_CUSTOM_USERNAME_PASSWORD,
             reply_markup=reply_markup,
 
-            reply_to_message_id=update.message_id
+            reply_to_message_id=update.id
         )
     else:
         # fallback for nonnumeric port a.k.a seedbox.io
