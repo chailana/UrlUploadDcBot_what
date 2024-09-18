@@ -1,4 +1,4 @@
-Now this attribute. If there are any problems with pyrogram likt last one
+#Now this attribute. If there are any problems with pyrogram likt last one
 
 # MIT License
 
